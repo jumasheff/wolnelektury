@@ -21,9 +21,9 @@ def production():
 
 @task
 def staging():
-    env.hosts = ['san.nowoczesnapolska.org.pl:2223']
-    env.user = 'staging'
-    env.app_path = '/home/staging/wolnelektury.pl'
+    env.hosts = ['54.77.63.92']
+    env.user = 'dastan'
+    env.app_path = '/home/dastan/wolnelektury'
     env.services = [
         DebianGunicorn('wolnelektury'),
     ]
